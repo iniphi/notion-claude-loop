@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f .claude/.session-open ] || [ -n \"$(git status --porcelain 2>/dev/null)\" ]; then echo 'A session is still open -> run /session-wrap before you leave.'; fi"
+          }
+        ]
+      }
+    ]
+  }
+}
