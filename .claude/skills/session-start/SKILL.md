@@ -98,8 +98,10 @@ lists. The row is the register entry; the Hub page is the project.
 
 - Never invent state. If Current State is empty, say it is empty.
 - Run only when asked. This skill fires when the user types
-  `/session-start`, not because a chat has opened. A chat that asks an
-  ordinary question gets an ordinary answer.
+  `/session-start` - not because a conversation has opened, and not
+  because you have decided to treat a message as a task. Claude can turn
+  any message into a task on its own now; that is not a session. A
+  message that asks an ordinary question gets an ordinary answer.
 - **A read that failed is not an empty result.** If a page or a query does
   not come back, name what you could not read and why, and carry on with
   the rest of the brief marked incomplete. Reporting nothing-found for

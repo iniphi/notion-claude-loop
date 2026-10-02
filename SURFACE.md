@@ -1,15 +1,16 @@
 # SURFACE.md — what Code adds
 
-The Code surface is the same loop as Chat and Cowork, running in a terminal
-with local files, git and hooks underneath it. It is optional — the loop is
-complete without it. If you would rather run the loop from Chat or Cowork
-only, you do not need this repository at all.
+The Code surface is the same loop as Conversation (claude.ai, the phone and
+the desktop app), running in a terminal with local files, git and hooks
+underneath it. It is optional — the loop is complete without it. If you
+would rather run the loop in Conversation only, you do not need this
+repository at all.
 
 > Everything here writes to Notion only. Notion stays the single source of
 > truth. The local files this surface keeps are a working profile and a
 > cache, never a second copy of memory.
 
-## What Code can do that Chat and Cowork cannot
+## What Code can do that Conversation cannot
 
 - **Local files under version control.** This directory is a git repo —
   history, branches, diffs.
@@ -24,13 +25,13 @@ only, you do not need this repository at all.
 ## One Code-only addition to `/session-start`
 
 On this surface, `/session-start` also reads local `git status` and the
-last three commits, and folds them into the session brief. Chat and Cowork
-have no equivalent — there is nothing local for them to read.
+last three commits, and folds them into the session brief. Conversation has
+no equivalent — there is no local repository for it to read.
 
 ## Entry point
 
 This repository is a standalone entry point for the Code surface. It does
-not require the loop to already be running on Chat or Cowork first — the
+not require the loop to already be running in Conversation first — the
 setup prompt in `README.md` discovers your Notion structure directly. If
-you *have* already set up Chat or Cowork, this surface reads the same
-Notion pages they do; nothing needs migrating.
+you *have* already set the loop up in Conversation, this surface reads the
+same Notion pages it does; nothing needs migrating.

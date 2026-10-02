@@ -42,7 +42,7 @@ the two filtered views, its Current State and its session log.
    filtered to `Project` contains the new row. Name it "Notes".
 7. **Create a `Session Log` database** on the Hub with the same columns as
    the one on the first project: Session, Number, Date, Surface
-   (Chat / Cowork / Code / Design / Hand), Status (Open / Closed), Goals,
+   (Conversation / Code / Design / Hand), Status (Open / Closed), Goals,
    Outcome, Next, Blockers. It is a separate database — one log per
    project is the design — so only the columns need to match, not the
    page around it.

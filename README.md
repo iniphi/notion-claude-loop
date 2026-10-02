@@ -1,10 +1,11 @@
 # Notion ↔ Claude loop — Code surface
 
 This is the Code-surface companion to the **Notion ↔ Claude loop**: a
-second brain that lives in Notion, with Claude reading and writing it
-through five skills. If you only ever want to run the loop from Chat or
-Cowork, you do not need this repository — it exists for people who want
-local files, git history, and file-backed skills as well.
+context system that lives in Notion, with Claude reading and writing it
+through five skills. If you only ever want to run the loop in
+Conversation (claude.ai, the phone or the desktop app), you do not need
+this repository — it exists for people who want local files, git history,
+and file-backed skills as well.
 
 Notion is the single source of truth. Nothing in this repository is a
 second copy of your state — see `CLAUDE.md` for the one-line version of
@@ -73,10 +74,10 @@ that rule, and `ARCHITECTURE.md` for the full shape.
 | File | Purpose |
 |---|---|
 | `CLAUDE.md` | Identity, the Notion page/database IDs, write conventions. Read every message. |
-| `SURFACE.md` | What Code can do that Chat and Cowork cannot. |
+| `SURFACE.md` | What Code can do that Conversation cannot. |
 | `ARCHITECTURE.md` | The memory map: root page, three databases, one Hub per project. |
 | `TODO.md` | The to-do contract - why there is no task list in this repo. |
-| `.claude/skills/*/SKILL.md` | The five loop skills, ported from the same Notion pages Chat and Cowork read. One source, three renderings. |
+| `.claude/skills/*/SKILL.md` | The five loop skills, ported from the same Notion pages Conversation reads. One source, two renderings. |
 | `.claude/settings.json` | The Stop hook that nudges you to `/session-wrap` before you close a session still open. |
 | `.mcp.json` | Declares the Notion MCP server for this project. |
 
@@ -86,4 +87,4 @@ The skill bodies here were ported from Notion, not written independently.
 If you change how a skill behaves, the durable fix is to edit the Notion
 ForClaude page and re-port it here — see the provenance note at the top of
 each `SKILL.md`. Editing only the local copy works, but it will drift from
-what Chat and Cowork run.
+what Conversation runs.

@@ -23,8 +23,8 @@ Turns a passing sentence into a to-do without stopping what you were doing.
 4. Set **Priority**. Default to Medium unless they signalled urgency.
 5. Set **Surface** and **Effort** if you can infer them honestly. Surface
    means where the work will be done, not where you happen to be running →
-   a to-do about files belongs to Cowork even if you are on Chat when you
-   capture it. Leave either empty rather than guessing.
+   a to-do that needs a terminal belongs to Code even if you capture it in
+   Conversation. Leave either empty rather than guessing.
 6. Confirm in one line. Do not read the whole row back.
 
 ## Rules

@@ -40,7 +40,7 @@ Notion does not repoint on duplication.
 
 ## The rest of this file library
 
-- `SURFACE.md` — what this surface (Code) can do that Chat and Cowork cannot.
+- `SURFACE.md` — what this surface (Code) can do that Conversation cannot.
 - `ARCHITECTURE.md` — the memory map: root page, three databases, one Hub
   per project.
 - `TODO.md` — the to-do contract. There is no local task list; it points at
